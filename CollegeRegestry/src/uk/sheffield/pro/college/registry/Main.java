@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         // adding a college (just one)
         String collegeName = JOptionPane.showInputDialog(null, "Please input a name of college", "Name a college", JOptionPane.INFORMATION_MESSAGE);
-        College college = new College(collegeName);
+        College college = new College();//collegeName);
         // perhaps we need to check IO for errors and exceptions
         JOptionPane.showMessageDialog(null,"The college " + collegeName + " was successfully added!","College has been added", JOptionPane.INFORMATION_MESSAGE);
         boolean flagAdd = true;         // flag indicating the point when we need to stop adding students to the college
