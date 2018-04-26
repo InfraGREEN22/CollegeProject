@@ -79,25 +79,25 @@ public class App {
                     JOptionPane.showMessageDialog(null, "You didn't type a search key!", "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
-                if (nameRadioButton.isEnabled()) {
+                if (nameRadioButton.isSelected()) {
                     outInfo(1,LogArea,searchTextField);
                 }
-                else if (surnameRadioButton.isEnabled()) {
+                else if (surnameRadioButton.isSelected()) {
                     outInfo(2,LogArea,searchTextField);
                 }
-                else if (genderRadioButton.isEnabled()) {
+                else if (genderRadioButton.isSelected()) {
                     outInfo(3,LogArea,searchTextField);
                 }
-                else if (nationalityRadioButton.isEnabled()) {
+                else if (nationalityRadioButton.isSelected()) {
                     outInfo(4,LogArea,searchTextField);
                 }
-                else if (programmeRadioButton.isEnabled()) {
+                else if (programmeRadioButton.isSelected()) {
                     outInfo(5,LogArea,searchTextField);
                 }
-                else if (courseRadioButton.isEnabled()) {
+                else if (courseRadioButton.isSelected()) {
                     outInfo(6,LogArea,searchTextField);
                 }
-                else if (pathwayRadioButton.isEnabled()) {
+                else if (pathwayRadioButton.isSelected()) {
                     outInfo(7,LogArea,searchTextField);
                 }
             }
