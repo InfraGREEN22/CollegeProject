@@ -81,136 +81,24 @@ public class App {
                 }
                 if (nameRadioButton.isEnabled()) {
                     outInfo(1,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String name = searchTextField.getText();
-                    int i = 1;
-                    for (Student st:college.students) {
-                        if(st.getName().equals(name)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
                 else if (surnameRadioButton.isEnabled()) {
                     outInfo(2,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String surname = searchTextField.getText();
-                    int i = 1;
-                    for (Student st : college.students) {
-                        if (st.getSurname().equals(surname)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
                 else if (genderRadioButton.isEnabled()) {
                     outInfo(3,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String gender = searchTextField.getText();
-                    int i = 1;
-                    for (Student st : college.students) {
-                        if (st.getGender().equals(gender)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
                 else if (nationalityRadioButton.isEnabled()) {
                     outInfo(4,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String nationality = searchTextField.getText();
-                    int i = 1;
-                    for (Student st : college.students) {
-                        if (st.getNationality().equals(nationality)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
                 else if (programmeRadioButton.isEnabled()) {
                     outInfo(5,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String programme = searchTextField.getText();
-                    int i = 1;
-                    for (Student st : college.students) {
-                        if (st.getProgramme().equals(programme)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
                 else if (courseRadioButton.isEnabled()) {
                     outInfo(6,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String course = searchTextField.getText();
-                    int i = 1;
-                    for (Student st : college.students) {
-                        if (st.getCourse().equals(course)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
                 else if (pathwayRadioButton.isEnabled()) {
                     outInfo(7,LogArea,searchTextField);
-                    /*LogArea.setText("");
-                    String pathway = searchTextField.getText();
-                    int i = 1;
-                    for (Student st : college.students) {
-                        if (st.getPathway().equals(pathway)) {
-                            LogArea.append("# " + Integer.toString(i) + "\n");
-                            LogArea.append("Name: " + st.getName() + "\n");
-                            LogArea.append("Surname: " + st.getSurname() + "\n");
-                            LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                            LogArea.append("Nationality: " + st.getNationality() + "\n");
-                            LogArea.append("Programme: " + st.getProgramme() + "\n");
-                            LogArea.append("Course: " + st.getCourse() + "\n");
-                            LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-                            i++;
-                        }
-                    }*/
                 }
             }
         });
@@ -229,7 +117,7 @@ public class App {
 
     }
 
-    public static void outInfo(int a, JTextArea LogArea, JTextField searchTextField) {
+    public void outInfo(int a, JTextArea LogArea, JTextField searchTextField) {
         switch (a) {
             case 1:     // name
                 LogArea.setText("");
@@ -237,14 +125,7 @@ public class App {
                 int i = 1;
                 for (Student st:college.students) {
                     if(st.getName().equals(name)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
@@ -255,14 +136,7 @@ public class App {
                 i = 1;
                 for (Student st:college.students) {
                     if(st.getGender().equals(gender)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
@@ -273,14 +147,7 @@ public class App {
                 i = 1;
                 for (Student st:college.students) {
                     if(st.getSurname().equals(surname)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
@@ -291,14 +158,7 @@ public class App {
                 i = 1;
                 for (Student st:college.students) {
                     if(st.getNationality().equals(nationality)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
@@ -309,14 +169,7 @@ public class App {
                 i = 1;
                 for (Student st:college.students) {
                     if(st.getProgramme().equals(programme)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
@@ -327,14 +180,7 @@ public class App {
                 i = 1;
                 for (Student st:college.students) {
                     if(st.getCourse().equals(course)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
@@ -345,19 +191,22 @@ public class App {
                 i = 1;
                 for (Student st:college.students) {
                     if(st.getPathway().equals(pathway)) {
-                        LogArea.append("# " + Integer.toString(i) + "\n");
-                        LogArea.append("Name: " + st.getName() + "\n");
-                        LogArea.append("Surname: " + st.getSurname() + "\n");
-                        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
-                        LogArea.append("Nationality: " + st.getNationality() + "\n");
-                        LogArea.append("Programme: " + st.getProgramme() + "\n");
-                        LogArea.append("Course: " + st.getCourse() + "\n");
-                        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
+                        this.printTable(st, i);
                         i++;
                     }
                 }
                 break;
         }
+    }
 
+    public void printTable(Student st, int i) {
+        LogArea.append("# " + Integer.toString(i) + "\n");
+        LogArea.append("Name: " + st.getName() + "\n");
+        LogArea.append("Surname: " + st.getSurname() + "\n");
+        LogArea.append("ID: " + Integer.toString(st.getId()) + "\n");
+        LogArea.append("Nationality: " + st.getNationality() + "\n");
+        LogArea.append("Programme: " + st.getProgramme() + "\n");
+        LogArea.append("Course: " + st.getCourse() + "\n");
+        LogArea.append("Pathway: " + st.getPathway() + "\n\n");
     }
 }
