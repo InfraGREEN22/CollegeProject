@@ -56,7 +56,7 @@
           <component id="5f7bd" class="javax.swing.JLabel" binding="AppLabel">
             <constraints/>
             <properties>
-              <font name="Arial Black" size="16" style="2"/>
+              <font name="Arial Black" size="16" style="1"/>
               <text value="College Registry System v 1.0"/>
             </properties>
           </component>
