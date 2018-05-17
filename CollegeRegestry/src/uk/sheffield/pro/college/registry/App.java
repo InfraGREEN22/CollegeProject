@@ -45,7 +45,7 @@ public class App {
                 else {
                     try {
                         Student st = new Student(nameTextField.getText(), surnameTexField.getText(), genderTextField.getText(),
-                                nationalityTextField.getText(), programmeTextField.getText(), courseTextField.getText(), pathwayTextField.getText());
+                                nationalityTextField.getText(), programmeTextField.getText(), courseTextField.getText(), pathwayTextField.getText(), 60.0);
                         college.addStudent(st);
                         JOptionPane.showMessageDialog(null, "The student " + nameTextField.getText() + " " + surnameTexField.getText() + " has been" +
                                 " successfully added to the College!");
@@ -119,16 +119,13 @@ public class App {
 
     public void outInfo(int a, JTextArea LogArea, JTextField searchTextField) {
         switch (a) {
-            case 1:     // name if same then skip else operate the vague search
+            case 1:     // name
                 LogArea.setText("");
                 String name = searchTextField.getText();
                 int i = 1;
                 for (Student st:college.students) {
                     if(st.getName().equals(name)) {
                         this.printTable(st, i);
-                        i++;
-                    }else{
-                        vaguesearch(i,st.getName(),name,st);
                         i++;
                     }
                 }
@@ -152,9 +149,6 @@ public class App {
                     if(st.getSurname().equals(surname)) {
                         this.printTable(st, i);
                         i++;
-                    }else{
-                        vaguesearch(i,st.getSurname(),surname,st);
-                        i++;
                     }
                 }
                 break;
@@ -165,9 +159,6 @@ public class App {
                 for (Student st:college.students) {
                     if(st.getNationality().equals(nationality)) {
                         this.printTable(st, i);
-                        i++;
-                    }else{
-                        vaguesearch(i,st.getNationality(),nationality,st);
                         i++;
                     }
                 }
@@ -180,9 +171,6 @@ public class App {
                     if(st.getProgramme().equals(programme)) {
                         this.printTable(st, i);
                         i++;
-                    }else{
-                        vaguesearch(i,st.getProgramme(),programme,st);
-                        i++;
                     }
                 }
                 break;
@@ -194,9 +182,6 @@ public class App {
                     if(st.getCourse().equals(course)) {
                         this.printTable(st, i);
                         i++;
-                    }else{
-                        vaguesearch(i,st.getCourse(),course,st);
-                        i++;
                     }
                 }
                 break;
@@ -207,9 +192,6 @@ public class App {
                 for (Student st:college.students) {
                     if(st.getPathway().equals(pathway)) {
                         this.printTable(st, i);
-                        i++;
-                    }else{
-                        vaguesearch(i,st.getPathway(),pathway,st);
                         i++;
                     }
                 }
@@ -226,19 +208,5 @@ public class App {
         LogArea.append("Programme: " + st.getProgramme() + "\n");
         LogArea.append("Course: " + st.getCourse() + "\n");
         LogArea.append("Pathway: " + st.getPathway() + "\n\n");
-    }
-    public void vaguesearch(int i,String x, String req,Student st){
-        //go through each character and add 1 point if one character is same as required
-        int p=0;
-        for (int j=0;j<req.length();j++){
-            char ch1=req.charAt(j);
-            for(int k=0;k<x.length();k++){
-                char ch2=x.charAt(k);
-                if(ch1==ch2) p++;
-            }
-        }
-        // if all points are above a certain level, I accept it and display this similar result
-        if (p>=req.length()-1)
-            this.printTable(st,i);
     }
 }
